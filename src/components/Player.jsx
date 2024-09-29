@@ -1,17 +1,15 @@
 import { useState, useRef } from "react";
 
 export default function Player() {
-  const [playerUsername, setPlayerUsername] = useState("");
+  const [playerUsername, setPlayerUsername] = useState(null);
 
   const playerName = useRef();
 
   // console.log(playerName);//* TESTIG
 
-  const handleClick = (event) => {
-    // if (playerUsername.length > 0) {
-    //   setSubmitted(true);
-    // }
+  const handleClick = () => {
     setPlayerUsername(playerName.current.value);
+    playerName.current.value = "";
   };
 
   return (
