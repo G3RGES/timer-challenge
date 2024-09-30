@@ -10,6 +10,7 @@ const TimerChallenge = ({ title, targetTime }) => {
       <p>
         <button>Start/Stop Challenge</button>
       </p>
+      <p className="">Time is running... / Timer inactive</p>
     </section>
   );
 };
